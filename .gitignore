@@ -68,6 +68,7 @@ crashlytics-build.properties
 # APIs Firebase
 google-services.*
 google-services-desktop.*
+FirebaseCppApp-8_2_0.so*
 
 # Packed Addressables
 [Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
