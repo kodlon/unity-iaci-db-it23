@@ -1,4 +1,4 @@
-﻿External Dependency Manager for Unity
+External Dependency Manager for Unity
 ========
 
 # Overview

@@ -1,4 +1,4 @@
-﻿# Version 1.2.166 - Jun 30, 2021
+# Version 1.2.166 - Jun 30, 2021
 * All - Fixed #440 and fixed #447 by specifying the parameter type while calling
   `GetApplicationIdentifier()` Unity API using reflection, due to a new
   overloaded method introduced in Unity 2021.2.

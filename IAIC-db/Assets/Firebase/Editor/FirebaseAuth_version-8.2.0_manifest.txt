@@ -1,4 +1,4 @@
-﻿Assets/Editor Default Resources/Firebase/fb_analytics.png
+Assets/Editor Default Resources/Firebase/fb_analytics.png
 Assets/Editor Default Resources/Firebase/fb_analytics_dark.png
 Assets/Editor Default Resources/Firebase/fb_auth.png
 Assets/Editor Default Resources/Firebase/fb_auth_dark.png
