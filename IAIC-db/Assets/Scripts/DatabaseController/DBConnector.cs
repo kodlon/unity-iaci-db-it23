@@ -43,6 +43,11 @@ namespace DatabaseController
 
             sessionName.text = "";
             sessionTime.text = "";
+            foreach (Transform child in sessionContent.transform)
+            {
+                Destroy(child.gameObject);
+            }
+            LoadData();
             addSessionUi.SetActive(false);
         }
 
