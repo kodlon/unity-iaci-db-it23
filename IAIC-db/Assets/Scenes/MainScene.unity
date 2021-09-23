@@ -189,7 +189,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190335
   m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -958,6 +958,7 @@ MonoBehaviour:
   sessionContent: {fileID: 1126284058}
   sessionName: {fileID: 1157809625}
   sessionTime: {fileID: 1803820862}
+  sessionErrorMessage: {fileID: 5625616}
 --- !u!4 &220553345
 Transform:
   m_ObjectHideFlags: 0
