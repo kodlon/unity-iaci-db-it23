@@ -1,11 +1,9 @@
 using System.Collections;
-using System.Linq;
 using UnityEngine;
 using Firebase.Database;
 using Firebase.Extensions;
 using Other;
 using TMPro;
-using UnityEngine.UI;
 
 
 namespace DatabaseController
@@ -17,6 +15,7 @@ namespace DatabaseController
         [SerializeField] private GameObject sessionContent;
         [SerializeField] private TMP_InputField sessionName;
         [SerializeField] private TMP_InputField sessionTime;
+        [SerializeField] private TMP_Text sessionErrorMessage;
 
         private DatabaseReference _databaseReference;
 
@@ -29,9 +28,10 @@ namespace DatabaseController
 
         public void SaveData()
         {
-            if (sessionName.text.Equals("") && sessionTime.text.Equals(""))
+            if (sessionName.text.Equals("") || sessionTime.text.Equals(""))
             {
                 Debug.Log("Session Empty");
+                sessionErrorMessage.text = "Заповніть поля";
                 return;
             }
 
@@ -40,6 +40,7 @@ namespace DatabaseController
             string jsonData = JsonUtility.ToJson(sessionData);
 
             _databaseReference.Child("Session " + sessionName.text).SetRawJsonValueAsync(jsonData);
+            sessionErrorMessage.text = "ОК!";
 
             sessionName.text = "";
             sessionTime.text = "";
